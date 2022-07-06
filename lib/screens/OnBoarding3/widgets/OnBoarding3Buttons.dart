@@ -8,7 +8,10 @@ class OnBoarding3Buttons extends StatelessWidget {
     return Column(
       children: [
         DefaultButton(
-          onTap: (){},
+          onTap: ()=>Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_)=>const NewAccount()),
+          ),
           title: 'إنشاء حساب جديد',
           textColor: AppColors.white,
           textFontWeight: FontWeight.bold,

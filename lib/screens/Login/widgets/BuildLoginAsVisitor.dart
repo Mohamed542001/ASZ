@@ -6,7 +6,10 @@ class BuildLoginAsVisitor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: (){},
+      onPressed: ()=>Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_)=>const VisitorNavigatorPage()),
+      ),
       child: CustomText(
         title: 'الدخول كزائر',
         color: AppColors.primary,

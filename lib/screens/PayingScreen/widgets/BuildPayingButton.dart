@@ -58,12 +58,11 @@ class _BuildPayingButtonState extends State<BuildPayingButton> {
                     height: 30,
                   ),
                   DefaultButton(
-                    onTap: () {},
-                    // onTap: ()=>Navigator.pushAndRemoveUntil(
-                    //   context,
-                    //   MaterialPageRoute(builder: (_)=>const Login()),
-                    //       (route) => false,
-                    // ),
+                    onTap: ()=>Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (_)=>const UserNavigatorPage()),
+                          (route) => false,
+                    ),
                     title: 'الصفحة الرئيسية',
                     textColor: AppColors.white,
                   )

@@ -8,7 +8,10 @@ class BuildLoginButton extends StatelessWidget {
     return DefaultButton(
       title: 'تسجيل الدخول',
       textColor: AppColors.white,
-      onTap: (){},
+        onTap: ()=>Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_)=>const UserNavigatorPage()),
+        ),
       margin: const EdgeInsets.all(0),
     );
   }

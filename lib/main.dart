@@ -1,4 +1,3 @@
-import 'package:asz/screens/UserNavigatorPage/UserNavigatorPageImports.dart';
 import 'package:asz/screens/splash/SplashImports.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Almarai',
       ),
-      home: const UserNavigatorPage(),
+      home: const SplashScreen(),
       builder: (context,child)=>Directionality(textDirection: TextDirection.rtl,child: child!,),
     );
   }
