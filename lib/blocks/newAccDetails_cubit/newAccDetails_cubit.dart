@@ -11,33 +11,6 @@ class NewAccDetailsCubit extends Cubit<NewAccDetailsStates>{
   double value1=140;
 
   List boolCheck=[false,false,false,false];
-  List activity=[
-    'غير نشيط',
-    'متوسط',
-    'نشيط',
-    'نشيط جدا',
-  ];
-
-  List aimModel = [
-    {
-      'text' : 'خسارة الوزن و الدهون',
-      'image' : Res.loseWeight
-    },
-    {
-      'text' : 'زيادة الكتلة العضلية و الوزن',
-      'image' : Res.massIncrease
-    }
-  ];
-  List trainingPlaceModel = [
-    {
-      'text' : 'النادي',
-      'image' : Res.club
-    },
-    {
-      'text' : 'المنزل',
-      'image' : Res.home
-    }
-  ];
 
   void isChanges(val){
     value=val;
