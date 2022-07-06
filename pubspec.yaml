@@ -65,10 +65,13 @@ flutter:
     - assets/fonts/Almarai-Bold.ttf
     - assets/fonts/Almarai-Regular.ttf
     - assets/images/addPhoto.png
+    - assets/images/appBarImage.png
+    - assets/images/chat.png
     - assets/images/checkCircle.png
     - assets/images/club.png
     - assets/images/dayLogo.png
     - assets/images/done.png
+    - assets/images/floatingButton.png
     - assets/images/heightLogo.png
     - assets/images/home.png
     - assets/images/loginLogo.png
@@ -81,6 +84,8 @@ flutter:
     - assets/images/onboarding_03.png
     - assets/images/plan.png
     - assets/images/splashLogo.png
+    - assets/images/status.png
+    - assets/images/userHome.png
     - assets/images/Visa.png
     - assets/images/weightLogo.png
   #   - images/a_dot_burr.jpeg
