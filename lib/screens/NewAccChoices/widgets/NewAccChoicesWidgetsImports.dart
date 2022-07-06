@@ -1,0 +1,19 @@
+import 'package:asz/blocks/newAccChoices_cubit/newAccChoices_cubit.dart';
+import 'package:asz/blocks/newAccChoices_cubit/newAccChoices_states.dart';
+import 'package:asz/models/NewAccChoices_Model/NewAccChoicesModel.dart';
+import 'package:asz/res.dart';
+import 'package:asz/screens/NewAccPackages/NewAccPackagesImports.dart';
+import 'package:asz/screens/widgets/AppColors.dart';
+import 'package:asz/screens/widgets/CustomText.dart';
+import 'package:asz/screens/widgets/DefaultButton.dart';
+import 'package:asz/screens/widgets/NewAccStepCircleAvatar.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+part 'BuildChoicesCircleAvatar.dart';
+part 'BuildTrainingDays.dart';
+part 'BuildProteinSources.dart';
+part 'BuildCarbohydrateSources.dart';
+part 'BuildFatSources.dart';
+part 'BuildAttachPhoto.dart';
+part 'NewAccChoicesButton.dart';
