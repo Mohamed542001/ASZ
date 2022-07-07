@@ -14,7 +14,7 @@ class BuildUserHomeAppBar extends StatelessWidget {
           ),
       ),
         bottom:  PreferredSize(
-            preferredSize: const Size.fromHeight(50.0),
+            preferredSize: const Size.fromHeight(60.0),
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 30),
               child: Row(

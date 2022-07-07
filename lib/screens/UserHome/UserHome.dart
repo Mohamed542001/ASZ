@@ -10,14 +10,39 @@ class UserHome extends StatefulWidget {
 class _UserHomeState extends State<UserHome> {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return Scaffold(
       body: CustomScrollView(
         slivers:
         [
-          BuildUserHomeAppBar(),
-              ],
+          const BuildUserHomeAppBar(),
+          SliverFillRemaining(
+            child: Container(
+              padding: const EdgeInsets.all(15),
+              child: ListView(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                children:  const [
+                  BuildUserDate(),
+                  BuildUserDaysCard(),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  BuildUserSendUpdate(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  BuildUserDailyMeals(),
+                  // BuildTodayExercisesCard(),
+
+
+
+                ],
+              ),
             ),
-          );
+          )
+        ],
+      ),
+    );
 
   }
 }
