@@ -34,7 +34,10 @@ class _VisitorNavigatorPageState extends State<VisitorNavigatorPage> {
           child: Image.asset(
             Res.floatingButton,
           ),
-          onPressed: () {  },
+          onPressed: () =>Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_)=>const TrainingScreen()),
+          ),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

@@ -5,11 +5,28 @@ class UserStatus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return  Scaffold(
       body: CustomScrollView(
         slivers:
         [
-          BuildUserStatusAppBar(),
+          const BuildUserStatusAppBar(),
+          SliverList(delegate: SliverChildListDelegate(
+              [
+                Container(
+                  padding: const EdgeInsets.all(15),
+                  child: Column(
+                    children: const[
+                      BuildCurrentStatus(),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      BuildPlanCards(),
+
+                    ],
+                  ),
+                )
+              ]
+          )),
         ],
       ),
     );

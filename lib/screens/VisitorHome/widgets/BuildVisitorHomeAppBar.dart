@@ -5,7 +5,9 @@ class BuildVisitorHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     return SliverAppBar(
+      key: scaffoldKey,
       backgroundColor: AppColors.primary,
       shape: const ContinuousRectangleBorder(
         borderRadius: BorderRadius.only(
@@ -14,7 +16,7 @@ class BuildVisitorHomeAppBar extends StatelessWidget {
         ),
       ),
       bottom:  PreferredSize(
-          preferredSize: const Size.fromHeight(50.0),
+          preferredSize: const Size.fromHeight(80.0),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 30),
             child: Row(
@@ -58,7 +60,9 @@ class BuildVisitorHomeAppBar extends StatelessWidget {
           )
       ),
       leading: IconButton(
-        onPressed: (){},
+        onPressed: (){
+          Scaffold.of(context).openDrawer();
+        },
         icon: const Icon(Icons.menu),
       ),
       actions: [

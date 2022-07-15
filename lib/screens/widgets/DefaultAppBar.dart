@@ -48,9 +48,9 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
         offstage: !back!,
         child: IconButton(
           onPressed: (){Navigator.of(context).pop();},
-          icon: const Icon(Icons.arrow_back_ios_outlined,
+          icon: Icon(Icons.arrow_back_ios_outlined,
             size: 16,
-            color: Colors.white,
+            color: iconColor??Colors.white,
           ),
         ),
       ),

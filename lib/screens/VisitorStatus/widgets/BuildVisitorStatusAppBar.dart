@@ -47,16 +47,14 @@ class BuildVisitorStatusAppBar extends StatelessWidget {
         icon: const Icon(Icons.menu),
       ),
       actions: [
-        Row(
-          children: [
-            CustomText(
-              title: 'خطة مدرب و التزام لاعب',
-              size: 14,
-              fontWeight: FontWeight.bold,
-              color: AppColors.white,
-            ),
-            IconButton(onPressed: (){}, icon: Image.asset(Res.chat)),
-          ],
+        Container(
+          margin: const EdgeInsets.all(15),
+          child: CustomText(
+            title: 'خطة مدرب و التزام لاعب',
+            size: 14,
+            fontWeight: FontWeight.bold,
+            color: AppColors.white,
+          ),
         )
       ],
       floating: false,

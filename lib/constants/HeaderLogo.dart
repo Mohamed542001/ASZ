@@ -1,5 +1,4 @@
-import 'package:asz/res.dart';
-import 'package:flutter/material.dart';
+part of 'ConstantsImports.dart';
 
 class HeaderLogo extends StatelessWidget {
   const HeaderLogo({Key? key}) : super(key: key);

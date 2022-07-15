@@ -65,34 +65,80 @@ flutter:
   assets:
     - assets/fonts/Almarai-Bold.ttf
     - assets/fonts/Almarai-Regular.ttf
+    - assets/images/aboutUsLogo.png
     - assets/images/addPhoto.png
     - assets/images/appBarImage.png
+    - assets/images/backExercises.png
+    - assets/images/bicepsExercises.png
+    - assets/images/bodyAfter1.png
+    - assets/images/bodyAfter2.png
+    - assets/images/bodyBefore1.png
+    - assets/images/bodyBefore2.png
     - assets/images/chat.png
     - assets/images/checkCircle.png
+    - assets/images/chestExercises.png
     - assets/images/club.png
+    - assets/images/contactUs.png
+    - assets/images/contactUsLogo.png
     - assets/images/dayLogo.png
     - assets/images/done.png
+    - assets/images/facebook.png
     - assets/images/firstMeal.jpg
     - assets/images/floatingButton.png
+    - assets/images/forearmsExercises.png
     - assets/images/fourthMeal.png
     - assets/images/heightLogo.png
     - assets/images/home.png
+    - assets/images/info.png
+    - assets/images/instagram.png
+    - assets/images/legExercises.png
+    - assets/images/lock.png
     - assets/images/loginLogo.png
+    - assets/images/logout.png
     - assets/images/loseWeight.png
+    - assets/images/Mask1.png
+    - assets/images/Mask10.png
+    - assets/images/Mask2.png
+    - assets/images/Mask3.png
+    - assets/images/Mask4.png
+    - assets/images/Mask5.png
+    - assets/images/Mask6.png
+    - assets/images/Mask7.png
+    - assets/images/Mask8.png
+    - assets/images/Mask9.png
     - assets/images/massIncrease.png
     - assets/images/mastercard.png
+    - assets/images/noExercises.png
     - assets/images/note.png
     - assets/images/onboarding_01.png
     - assets/images/onboarding_02.png
     - assets/images/onboarding_03.png
+    - assets/images/pause.png
     - assets/images/plan.png
+    - assets/images/planCard.png
+    - assets/images/policyLogo.png
+    - assets/images/privacyPolicy.png
     - assets/images/secondMeal.png
+    - assets/images/shouldersExercises.png
+    - assets/images/snapchat.png
     - assets/images/splashLogo.png
     - assets/images/status.png
+    - assets/images/statusBody1.png
+    - assets/images/statusBody2.png
+    - assets/images/statusPlan.png
+    - assets/images/subscriber1.png
+    - assets/images/subscriber2.png
+    - assets/images/terms.png
     - assets/images/thirdMeal.png
+    - assets/images/tiktok.png
     - assets/images/todayTrainingCard.png
+    - assets/images/training1.jpg
+    - assets/images/tricepsExercises.png
+    - assets/images/twitter.png
     - assets/images/userHome.png
     - assets/images/Visa.png
+    - assets/images/watch.png
+    - assets/images/website.png
     - assets/images/weightLogo.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

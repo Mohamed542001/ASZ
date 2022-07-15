@@ -15,31 +15,68 @@ class _UserHomeState extends State<UserHome> {
         slivers:
         [
           const BuildUserHomeAppBar(),
-          SliverFillRemaining(
-            child: Container(
-              padding: const EdgeInsets.all(15),
-              child: ListView(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                children:  const [
-                  BuildUserDate(),
-                  BuildUserDaysCard(),
-                  SizedBox(
-                    height: 15,
+          SliverList(
+            delegate: SliverChildListDelegate(
+                 [
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: ListView(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      children:  const [
+                        BuildUserDate(),
+                        BuildUserDaysCard(),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        BuildUserSendUpdate(),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        BuildTodayExercisesCard(),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        BuildUserDailyMeals(),
+                        // BuildTodayExercisesCard(),
+
+
+
+                      ],
+                    ),
                   ),
-                  BuildUserSendUpdate(),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  BuildUserDailyMeals(),
-                  // BuildTodayExercisesCard(),
-
-
-
-                ],
-              ),
+                ]
             ),
-          )
+          ),
+          // SliverFillRemaining(
+          //   child: Container(
+          //     padding: const EdgeInsets.all(15),
+          //     child: ListView(
+          //       shrinkWrap: true,
+          //       physics: const NeverScrollableScrollPhysics(),
+          //       children:  const [
+          //         BuildUserDate(),
+          //         BuildUserDaysCard(),
+          //         SizedBox(
+          //           height: 15,
+          //         ),
+          //         BuildUserSendUpdate(),
+          //         SizedBox(
+          //           height: 20,
+          //         ),
+          //         BuildTodayExercisesCard(),
+          //         SizedBox(
+          //           height: 20,
+          //         ),
+          //         BuildUserDailyMeals(),
+          //         // BuildTodayExercisesCard(),
+          //
+          //
+          //
+          //       ],
+          //     ),
+          //   ),
+          // )
         ],
       ),
     );

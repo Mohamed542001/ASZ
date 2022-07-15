@@ -5,11 +5,28 @@ class VisitorStatus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: CustomScrollView(
         slivers:
         [
-          BuildVisitorStatusAppBar(),
+          const BuildVisitorStatusAppBar(),
+          SliverList(delegate: SliverChildListDelegate(
+              [
+                Container(
+                  padding: const EdgeInsets.all(15),
+                  child: Column(
+                    children: const[
+                      BuildVisitorCard(),
+                      SizedBox(
+                        height: 60,
+                      ),
+
+                      BuildVisitorStatusButton()
+                    ],
+                  ),
+                )
+              ]
+          ))
         ],
       ),
     );

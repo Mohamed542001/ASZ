@@ -1,7 +1,20 @@
+import 'package:asz/blocks/visitorHome_cubit/visitorHome_cubit.dart';
+import 'package:asz/blocks/visitorHome_cubit/visitorHome_states.dart';
+import 'package:asz/constants/ConstantsImports.dart';
+import 'package:asz/models/visitorHome_model/VisitorHomeModel.dart';
 import 'package:asz/res.dart';
+import 'package:asz/screens/Login/LoginImports.dart';
+import 'package:asz/screens/SubscriberOpinion/SubscriberOpinionImports.dart';
+import 'package:asz/screens/SubscriberResults/SubscriberResultsImports.dart';
 import 'package:asz/screens/widgets/AppColors.dart';
 import 'package:asz/screens/widgets/CustomText.dart';
 import 'package:asz/screens/widgets/DefaultButton.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'BuildVisitorHomeAppBar.dart';
+part 'BuildHowSubscribe.dart';
+part 'BuildVisitorTraining.dart';
+part 'BuildSubscriberResults.dart';
+part 'BuildSubscriberOpinion.dart';
+part 'BuildVisitorHomeDrawer.dart';
