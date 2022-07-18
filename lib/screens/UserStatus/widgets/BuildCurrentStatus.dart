@@ -31,15 +31,7 @@ class BuildCurrentStatus extends StatelessWidget {
                       size: 12,
                       fontWeight: FontWeight.w900,
                     ),
-                    DefaultButton(
-                      onTap: (){},
-                      title: 'تحديث الحالة',
-                      textSize: 12,
-                      textColor: AppColors.white,
-                      width: 100,
-                      margin: const EdgeInsets.all(0),
-                      height: 33,
-                    )
+                    const BuildCurrentStatusButton(),
                   ],
                 ),
                 CustomText(

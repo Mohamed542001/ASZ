@@ -78,14 +78,17 @@ class _CustomInputFormFieldState extends State<CustomInputFormField> {
           vertical: widget.verticalMargin!, horizontal: widget.horizontalMargin!),
       child: GestureDetector(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (widget.upperText != null)
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Text(
                   widget.upperText!,
                   style: const TextStyle(
-                      fontWeight: FontWeight.w900, color: Colors.grey),
+                      color: Color(0xFF2C0C0C),
+                    fontSize: 16
+                  ),
                 ),
               ),
             TextFormField(

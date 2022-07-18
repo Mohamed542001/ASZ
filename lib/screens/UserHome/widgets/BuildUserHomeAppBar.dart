@@ -64,7 +64,9 @@ class BuildUserHomeAppBar extends StatelessWidget {
             )
     ),
       leading: IconButton(
-        onPressed: (){},
+        onPressed: (){
+          Scaffold.of(context).openDrawer();
+        },
         icon: const Icon(Icons.menu),
       ),
       title: CustomText(

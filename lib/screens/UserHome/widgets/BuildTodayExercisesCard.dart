@@ -17,7 +17,7 @@ class BuildTodayExercisesCard extends StatelessWidget {
           height: 10,
         ),
         SizedBox(
-          height: 188,
+          height: 200,
           child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0),
@@ -41,7 +41,7 @@ class BuildTodayExercisesCard extends StatelessWidget {
                     ),
                     CustomText(
                       title: 'راحة من التمرين مو الاكل',
-                      size: 10,
+                      size: 12,
                       color: AppColors.formBgColor,
                       align: TextAlign.center,
                     ),

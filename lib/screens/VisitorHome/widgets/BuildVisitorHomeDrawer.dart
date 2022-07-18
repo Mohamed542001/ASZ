@@ -6,168 +6,66 @@ class BuildVisitorHomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20),
-            bottomLeft: Radius.circular(20)),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 50),
-            child: const HeaderLogo(),
-          ),
-          InkWell(
-            onTap: ()=>Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_)=>const ContactUs()),
-            ),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(
-                    width: 1,
-                    color: AppColors.formBgColor,
-                  ),
+      backgroundColor: AppColors.white,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(20),
+              bottomLeft: Radius.circular(20)),
+        ),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 50),
+                child: const HeaderLogo(),
+              ),
+              CustomDrawerCard(
+                title: 'اتصل بنا',
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_)=>const ContactUs()),
                 ),
+                image: Res.contactUs,
+                border: true,
               ),
-              child: Row(
-                children: [
-                  Image.asset(Res.contactUs),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  CustomText(
-                    title: 'اتصل بنا',
-                    fontWeight: FontWeight.bold,
-                    size: 14,
-                  )
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: ()=>Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_)=>const AboutUs()),
-            ),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(
-                    width: 1,
-                    color: AppColors.formBgColor,
-                  ),
+              CustomDrawerCard(
+                title: 'ماذا عنا',
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_)=>const AboutUs()),
                 ),
+                image: Res.info,
+                border: true,
               ),
-              child: Row(
-                children: [
-                  Image.asset(Res.info),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  CustomText(
-                    title: 'ماذا عنا',
-                    fontWeight: FontWeight.bold,
-                    size: 14,
-                  )
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: ()=>Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_)=>const TermsAndConditions()),
-            ),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(
-                    width: 1,
-                    color: AppColors.formBgColor,
-                  ),
+              CustomDrawerCard(
+                title: 'الشروط والأحكام',
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_)=>const TermsAndConditions()),
                 ),
+                image: Res.lock,
+                border: true,
               ),
-              child: Row(
-                children: [
-                  Image.asset(Res.lock),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  CustomText(
-                    title: 'الشروط والأحكام',
-                    fontWeight: FontWeight.bold,
-                    size: 14,
-                  )
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: ()=>Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_)=>const PrivacyPolicy()),
-            ),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(
-                    width: 1,
-                    color: AppColors.formBgColor,
-                  ),
+              CustomDrawerCard(
+                title: 'سياسة الخصوصية',
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_)=>const PrivacyPolicy()),
                 ),
+                image: Res.privacyPolicy,
+                border: true,
               ),
-              child: Row(
-                children: [
-                  Image.asset(Res.privacyPolicy),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  CustomText(
-                    title: 'سياسة الخصوصية',
-                    fontWeight: FontWeight.bold,
-                    size: 14,
-                  )
-                ],
+              CustomDrawerCard(
+                title: 'تسجيل الدخول',
+                onTap: ()=>Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_)=>const Login()),
+                ),
+                image: Res.logout,
+                border: false,
               ),
-            ),
-          ),
-          InkWell(
-            onTap: ()=>Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: (_)=>const Login()),
-                  (route) => false,
-            ),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              child: Row(
-                children: [
-                  Image.asset(Res.logout),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  CustomText(
-                    title: 'تسجيل الدخول',
-                    fontWeight: FontWeight.bold,
-                    size: 14,
-                  )
-                ],
-              ),
-            ),
-          ),
-        ]
-      )
+            ]
+        )
     );
   }
 }

@@ -33,6 +33,10 @@ dependencies:
   flutter_bloc:
   flutter_linear_datepicker:
   im_stepper:
+  file_picker:
+  open_file:
+  flutter_rating_bar: ^4.0.1
+  expandable: ^5.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -66,6 +70,8 @@ flutter:
     - assets/fonts/Almarai-Bold.ttf
     - assets/fonts/Almarai-Regular.ttf
     - assets/images/aboutUsLogo.png
+    - assets/images/account.png
+    - assets/images/accountLogo.png
     - assets/images/addPhoto.png
     - assets/images/appBarImage.png
     - assets/images/backExercises.png
@@ -78,17 +84,21 @@ flutter:
     - assets/images/checkCircle.png
     - assets/images/chestExercises.png
     - assets/images/club.png
+    - assets/images/commonQuestions.png
     - assets/images/contactUs.png
     - assets/images/contactUsLogo.png
     - assets/images/dayLogo.png
     - assets/images/done.png
+    - assets/images/Edit.png
     - assets/images/facebook.png
     - assets/images/firstMeal.jpg
     - assets/images/floatingButton.png
     - assets/images/forearmsExercises.png
     - assets/images/fourthMeal.png
     - assets/images/heightLogo.png
+    - assets/images/help.png
     - assets/images/home.png
+    - assets/images/imageUpload.png
     - assets/images/info.png
     - assets/images/instagram.png
     - assets/images/legExercises.png
@@ -113,15 +123,18 @@ flutter:
     - assets/images/onboarding_01.png
     - assets/images/onboarding_02.png
     - assets/images/onboarding_03.png
+    - assets/images/password.png
     - assets/images/pause.png
     - assets/images/plan.png
     - assets/images/planCard.png
     - assets/images/policyLogo.png
     - assets/images/privacyPolicy.png
+    - assets/images/review.png
     - assets/images/secondMeal.png
     - assets/images/shouldersExercises.png
     - assets/images/snapchat.png
     - assets/images/splashLogo.png
+    - assets/images/stars.png
     - assets/images/status.png
     - assets/images/statusBody1.png
     - assets/images/statusBody2.png
@@ -136,6 +149,7 @@ flutter:
     - assets/images/tricepsExercises.png
     - assets/images/twitter.png
     - assets/images/userHome.png
+    - assets/images/videoUpload.png
     - assets/images/Visa.png
     - assets/images/watch.png
     - assets/images/website.png

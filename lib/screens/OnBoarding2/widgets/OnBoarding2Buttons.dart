@@ -23,7 +23,7 @@ class OnBoarding2Buttons extends StatelessWidget {
         DefaultButton(
           onTap: ()=>Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (_)=>const Login()),
+            MaterialPageRoute(builder: (_)=>const OnBoarding3()),
                 (route) => false,
           ),
           title: 'تخطي',

@@ -39,7 +39,7 @@ class PrivacyPolicy extends StatelessWidget {
             ),
             leading: IconButton(
               onPressed: ()=>Navigator.of(context).pop(),
-              icon: const Icon(Icons.arrow_back_ios_outlined),
+              icon: const Icon(Icons.arrow_back_ios_outlined,size: 16,),
             ),
             floating: false,
             pinned: false,

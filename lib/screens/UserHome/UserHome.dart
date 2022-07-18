@@ -11,6 +11,7 @@ class _UserHomeState extends State<UserHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const BuildUserHomeDrawer(),
       body: CustomScrollView(
         slivers:
         [
